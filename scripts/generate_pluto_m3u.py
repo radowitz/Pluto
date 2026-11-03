@@ -4,6 +4,9 @@
 Stream URLs embed a Pluto session JWT that expires after about 24 hours.
 Re-run this script to refresh them. Paths are relative to the current
 working directory unless absolute paths are given.
+
+KEEP_GROUPS and PARTIAL_GROUPS at the top of this file choose which
+categories are published. The EPG contains only those same channels.
 """
 
 from __future__ import annotations
@@ -35,6 +38,25 @@ USER_AGENT = (
 APP_VERSION = "9.1.2"
 DEVICE_VERSION = "145.0.0"
 _INVALID_XML = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+
+# Channels to publish. Edit these lists to change the lineup.
+# Matching ignores case and punctuation. "+", "&", and the word "and" are
+# treated as the same, so "News + Opinion" also matches "News & Opinion".
+# KEEP_GROUPS are included in full. PARTIAL_GROUPS keeps a channel only when
+# its name contains one of the phrases (same case/symbol rules). An empty
+# PARTIAL phrase list keeps nothing from that group.
+KEEP_GROUPS = [
+    "News + Opinion",
+    "Sports",
+    "Animals + Nature",
+    "Local News",
+]
+PARTIAL_GROUPS = {
+    "History + Science": [
+        "cnn originals",  # CNN Originals, CNN-Originals, "CNN Originals 2", ...
+        "cnn",  # any other CNN-named channel that Pluto files in this group
+    ],
+}
 
 
 def fetch(url: str, timeout: int, attempts: int = 4) -> bytes:
@@ -127,6 +149,81 @@ def stream_url(stitcher: str, channel_id: str, jwt: str) -> str:
         f"&appName=web&appVersion={APP_VERSION}&deviceDNT=0&serverSideAds=false"
         f"&deviceId={device_id}&sid={sid}&jwt={jwt}"
     )
+
+
+def normalize_label(value: str) -> str:
+    text = value.casefold().replace("+", " and ").replace("&", " and ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return " ".join(text.split())
+
+
+def compact_label(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.casefold())
+
+
+def name_matches(name: str, phrases: list[str]) -> bool:
+    compact = compact_label(name)
+    if not compact:
+        return False
+    return any(compact_label(phrase) and compact_label(phrase) in compact for phrase in phrases)
+
+
+def filter_channels(channels: list[dict]) -> list[dict]:
+    """Keep KEEP_GROUPS in full, plus name-matched channels from PARTIAL_GROUPS."""
+    full = {normalize_label(group): group for group in KEEP_GROUPS}
+    partial = {normalize_label(group): (group, list(phrases)) for group, phrases in PARTIAL_GROUPS.items()}
+    overlap = set(full) & set(partial)
+    if overlap:
+        raise RuntimeError("A group is listed in both KEEP_GROUPS and PARTIAL_GROUPS: " + ", ".join(sorted(overlap)))
+
+    matched_full: dict[str, list[dict]] = {key: [] for key in full}
+    seen_partial: dict[str, list[dict]] = {key: [] for key in partial}
+    kept: list[dict] = []
+    for channel in channels:
+        group = category_of(channel)
+        key = normalize_label(group)
+        if key in matched_full:
+            matched_full[key].append(channel)
+            kept.append(channel)
+            continue
+        if key in seen_partial:
+            seen_partial[key].append(channel)
+            if name_matches(channel.get("name") or "", partial[key][1]):
+                kept.append(channel)
+
+    missing_groups = [full[key] for key, found in matched_full.items() if not found]
+    missing_groups.extend(partial[key][0] for key, found in seen_partial.items() if not found)
+    if missing_groups:
+        seen = sorted({category_of(channel) for channel in channels})
+        raise RuntimeError(
+            "Configured group(s) matched nothing: "
+            + ", ".join(missing_groups)
+            + ". Categories in this lineup: "
+            + ", ".join(seen)
+        )
+
+    unmatched_names: list[str] = []
+    for key, found in seen_partial.items():
+        phrases = partial[key][1]
+        hits = [channel for channel in found if name_matches(channel.get("name") or "", phrases)]
+        if hits:
+            continue
+        names = [channel.get("name") or channel.get("_id") or "?" for channel in found]
+        unmatched_names.append(f"{partial[key][0]} ({', '.join(names)})")
+    if unmatched_names:
+        raise RuntimeError(
+            "No channel name matched the configured phrases in: " + "; ".join(unmatched_names)
+        )
+
+    print(f"Filter kept {len(kept)} of {len(channels)} channels:")
+    for key, found in matched_full.items():
+        print(f"  {full[key]}: {len(found)}")
+    for key, found in seen_partial.items():
+        phrases = partial[key][1]
+        hits = [channel for channel in found if name_matches(channel.get("name") or "", phrases)]
+        names = ", ".join(channel.get("name") or "?" for channel in hits)
+        print(f"  {partial[key][0]}: {len(hits)} ({names})")
+    return kept
 
 
 def usable_channels(channels: list[dict]) -> list[dict]:
@@ -248,6 +345,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         help="Fail unless Pluto reports this marketing region (default: %(default)s). Use an empty string to accept any region.",
     )
     parser.add_argument("--no-gzip", action="store_true", help="Do not also write a .gz next to the XMLTV file")
+    parser.add_argument(
+        "--no-filter",
+        action="store_true",
+        help="Keep every usable channel instead of applying KEEP_GROUPS and PARTIAL_GROUPS",
+    )
     return parser.parse_args(argv)
 
 
@@ -297,6 +399,15 @@ def main(argv: list[str] | None = None) -> int:
     if not selected:
         print("No usable Pluto channels were returned.", file=sys.stderr)
         return 1
+    if not args.no_filter:
+        try:
+            selected = filter_channels(selected)
+        except RuntimeError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        if not selected:
+            print("The channel filter removed every channel.", file=sys.stderr)
+            return 1
 
     expires = jwt_expiry(jwt)
     playlist = build_m3u(selected, stitcher, jwt, args.epg_url, region, city, now, expires)
