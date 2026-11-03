@@ -31,7 +31,7 @@ Pluto’s category names are matched without case or punctuation differences (`+
 - Animals + Nature
 - Local News
 
-From **History + Science**, only channels whose names contain `CNN` are kept (today that is **CNN Originals**). Every other category is dropped. To change this later, edit `KEEP_GROUPS` and `PARTIAL_GROUPS` at the top of `scripts/generate_pluto_m3u.py`.
+From **History + Science**, only channels whose names contain `CNN` are kept (today that is **CNN Originals**). Every other category is dropped. If the same display name is listed more than once, the **Local News** copy is kept; when none of the copies is Local News, the first one is kept. That comparison ignores case and extra spaces, which removes the second CBS News Baltimore, Detroit, Los Angeles, and New York entries. To change this later, edit `KEEP_GROUPS`, `PARTIAL_GROUPS`, and `PREFERRED_DUPLICATE_GROUP` at the top of `scripts/generate_pluto_m3u.py`.
 
 ## Automatic refresh
 
@@ -102,7 +102,7 @@ M3U 文件头里的 `url-tvg` 和 `x-tvg-url` 都指向上面的 XML 地址，�
 - Animals + Nature（动物与自然）
 - Local News（地方新闻）
 
-**History + Science**（历史与科学）里只保留名称中含有 `CNN` 的频道（目前是 **CNN Originals**）。其余分类全部去掉。以后要改范围，编辑 `scripts/generate_pluto_m3u.py` 顶部的 `KEEP_GROUPS` 和 `PARTIAL_GROUPS`。
+**History + Science**（历史与科学）里只保留名称中含有 `CNN` 的频道（目前是 **CNN Originals**）。其余分类全部去掉。同一个显示名称出现多次时，优先保留 **Local News**（地方新闻）里的那一条；如果都不是地方新闻，则保留先出现的一条。比较时忽略大小写和多余空格，因此 CBS News Baltimore、Detroit、Los Angeles、New York 各自只会留下地方新闻里的那一路。以后要改范围，编辑 `scripts/generate_pluto_m3u.py` 顶部的 `KEEP_GROUPS`、`PARTIAL_GROUPS` 和 `PREFERRED_DUPLICATE_GROUP`。
 
 ## 自动更新
 

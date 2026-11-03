@@ -6,7 +6,9 @@ Re-run this script to refresh them. Paths are relative to the current
 working directory unless absolute paths are given.
 
 KEEP_GROUPS and PARTIAL_GROUPS at the top of this file choose which
-categories are published. The EPG contains only those same channels.
+categories are published. Duplicate display names are then collapsed,
+preferring PREFERRED_DUPLICATE_GROUP. The EPG contains only the channels
+that remain.
 """
 
 from __future__ import annotations
@@ -57,6 +59,11 @@ PARTIAL_GROUPS = {
         "cnn",  # any other CNN-named channel that Pluto files in this group
     ],
 }
+# Same display name in more than one kept channel: keep the copy in this
+# group (same case/symbol rules as KEEP_GROUPS). If none of the copies are
+# in that group, keep the first. Set to "" to always keep the first.
+# Name comparison itself ignores only case and whitespace.
+PREFERRED_DUPLICATE_GROUP = "Local News"
 
 
 def fetch(url: str, timeout: int, attempts: int = 4) -> bytes:
@@ -223,6 +230,45 @@ def filter_channels(channels: list[dict]) -> list[dict]:
         hits = [channel for channel in found if name_matches(channel.get("name") or "", phrases)]
         names = ", ".join(channel.get("name") or "?" for channel in hits)
         print(f"  {partial[key][0]}: {len(hits)} ({names})")
+    return kept
+
+
+def channel_name_key(channel: dict) -> str:
+    """Identity for dedupe: case- and whitespace-insensitive display name."""
+    name = " ".join((channel.get("name") or "").casefold().split())
+    if name:
+        return name
+    return f"\0{channel.get('_id')}"
+
+
+def dedupe_channels(channels: list[dict]) -> list[dict]:
+    """Collapse identical display names. Prefer Local News, else the first copy."""
+    preferred = normalize_label(PREFERRED_DUPLICATE_GROUP) if PREFERRED_DUPLICATE_GROUP else ""
+    grouped: dict[str, list[dict]] = {}
+    for channel in channels:
+        grouped.setdefault(channel_name_key(channel), []).append(channel)
+
+    drop_ids: set[int] = set()
+    for copies in grouped.values():
+        if len(copies) < 2:
+            continue
+        preferred_copies = [channel for channel in copies if preferred and normalize_label(category_of(channel)) == preferred]
+        keeper = preferred_copies[0] if preferred_copies else copies[0]
+        for channel in copies:
+            if channel is keeper:
+                continue
+            drop_ids.add(id(channel))
+            print(
+                "Dropped duplicate "
+                f"{channel.get('name')!r} [{category_of(channel)}] id={channel.get('_id')}; "
+                f"kept {keeper.get('name')!r} [{category_of(keeper)}] id={keeper.get('_id')}"
+            )
+
+    kept = [channel for channel in channels if id(channel) not in drop_ids]
+    if drop_ids:
+        print(f"Name dedupe dropped {len(drop_ids)} channel(s); {len(kept)} remain.")
+    else:
+        print(f"Name dedupe found no duplicates; {len(kept)} channels remain.")
     return kept
 
 
@@ -408,6 +454,10 @@ def main(argv: list[str] | None = None) -> int:
         if not selected:
             print("The channel filter removed every channel.", file=sys.stderr)
             return 1
+    selected = dedupe_channels(selected)
+    if not selected:
+        print("Name dedupe removed every channel.", file=sys.stderr)
+        return 1
 
     expires = jwt_expiry(jwt)
     playlist = build_m3u(selected, stitcher, jwt, args.epg_url, region, city, now, expires)
