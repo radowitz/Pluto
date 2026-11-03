@@ -20,22 +20,6 @@
     <display-name>LiveNOW from FOX</display-name>
     <icon src="https://images.pluto.tv/channels/63d025db4e83e700086eaa96/colorLogoPNG.png" />
   </channel>
-  <channel id="pluto-62cdcdf7393d8400076f3df1">
-    <display-name>CBS News Baltimore</display-name>
-    <icon src="https://images.pluto.tv/channels/62cdcdf7393d8400076f3df1/colorLogoPNG.png" />
-  </channel>
-  <channel id="pluto-5dc9b8223687ff000936ed79">
-    <display-name>CBS News New York</display-name>
-    <icon src="https://images.pluto.tv/channels/5dc9b8223687ff000936ed79/colorLogoPNG.png" />
-  </channel>
-  <channel id="pluto-5dc9b875e280c80009a8a44a">
-    <display-name>CBS News Los Angeles</display-name>
-    <icon src="https://images.pluto.tv/channels/5dc9b875e280c80009a8a44a/colorLogoPNG.png" />
-  </channel>
-  <channel id="pluto-634f24cf3ce5fa0007c68f39">
-    <display-name>CBS News Detroit</display-name>
-    <icon src="https://images.pluto.tv/channels/634f24cf3ce5fa0007c68f39/colorLogoPNG.png" />
-  </channel>
   <channel id="pluto-55b179af994403942f3061d6">
     <display-name>Newsmax2</display-name>
     <icon src="https://images.pluto.tv/channels/55b179af994403942f3061d6/colorLogoPNG.png" />
@@ -304,10 +288,6 @@
     <display-name>FOX LOCAL Washington DC</display-name>
     <icon src="https://images.pluto.tv/channels/667f34fffc3a4600087cb96d/colorLogoPNG_1766542815500.png" />
   </channel>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5a6b92f6e22a617379789618">
-    <title lang="en">CBS News 24/7</title>
-    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5a6b92f6e22a617379789618">
     <title lang="en">CBS News 24/7</title>
     <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
@@ -331,10 +311,6 @@
   <programme start="20261103220000 +0000" stop="20261104000000 +0000" channel="pluto-5a6b92f6e22a617379789618">
     <title lang="en">The Nerd Show</title>
     <desc lang="en">CBS News' Anthony Salvanto and Caitlin Huey-Burns break down midterm results, polling and key congressional races with Democratic and Republican pollsters in this Election Day special.</desc>
-  </programme>
-  <programme start="20261103150000 +0000" stop="20261103170000 +0000" channel="pluto-5df97894467dfa00091c873c">
-    <title lang="en">Current With Christine Romans</title>
-    <desc lang="en">Christine gets you current - from breaking news, to the economy, to politics, to global events; real news, real context, right now.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5df97894467dfa00091c873c">
     <title lang="en">NBC News Daily With Morgan Radford and Vicky Nguyen</title>
@@ -372,10 +348,6 @@
     <title lang="en">ABC News Election Night: Vote 2026</title>
     <desc lang="en">Comprehensive coverage of the 2026 midterm election led by David Muir and the powerhouse political team covering the candidates, races, results and important issues for Americans across the country.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5421f71da6af422839419cb3">
-    <title lang="en">CNN Headline Express: Election Edition</title>
-    <desc lang="en">From the latest election developments to the big stories of the day, get the headlines that matter with live updates throughout the day.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5421f71da6af422839419cb3">
     <title lang="en">CNN Headline Express: Election Edition</title>
     <desc lang="en">From the latest election developments to the big stories of the day, get the headlines that matter with live updates throughout the day.</desc>
@@ -400,6 +372,10 @@
     <title lang="en">In Case You Missed It</title>
     <desc lang="en">Check out the most interesting and unforgettable moments from CNN… in case you missed it!</desc>
   </programme>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5421f71da6af422839419cb3">
+    <title lang="en">American Pulse</title>
+    <desc lang="en">Captivating and intriguing local stories from around the U.S. all in one place.</desc>
+  </programme>
   <programme start="20261103150000 +0000" stop="20261103190000 +0000" channel="pluto-63d025db4e83e700086eaa96">
     <title lang="en">LiveNOW from FOX</title>
     <desc lang="en">Always LIVE, 24/7; raw &amp; unfiltered breaking news, live events and stories from across the nation.</desc>
@@ -411,134 +387,6 @@
   <programme start="20261103230000 +0000" stop="20261104030000 +0000" channel="pluto-63d025db4e83e700086eaa96">
     <title lang="en">Live Results: Midterm Elections 2026</title>
     <desc lang="en">Live election results as crucial US Senate and US House races decide the balance of power.</desc>
-  </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">WJZ News 9am</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">WJZ News 12pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103173000 +0000" stop="20261103180000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">WJZ News 12pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103180000 +0000" stop="20261103190000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">Latest Baltimore News &amp; Headlines</title>
-    <desc lang="en">Top stories in Baltimore.</desc>
-  </programme>
-  <programme start="20261103190000 +0000" stop="20261103200000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">Latest Baltimore News &amp; Headlines</title>
-    <desc lang="en">Top stories in Baltimore.</desc>
-  </programme>
-  <programme start="20261103200000 +0000" stop="20261103210000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">Latest Baltimore News &amp; Headlines</title>
-    <desc lang="en">Top stories in Baltimore.</desc>
-  </programme>
-  <programme start="20261103210000 +0000" stop="20261103220000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">WJZ News 4pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-62cdcdf7393d8400076f3df1">
-    <title lang="en">WJZ News 5pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
-  </programme>
-  <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">CBS News New York 12pm</title>
-    <desc lang="en">Midday news update.</desc>
-  </programme>
-  <programme start="20261103173000 +0000" stop="20261103180000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">CBS News New York 12pm</title>
-    <desc lang="en">Midday news update.</desc>
-  </programme>
-  <programme start="20261103180000 +0000" stop="20261103190000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
-  </programme>
-  <programme start="20261103190000 +0000" stop="20261103200000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
-  </programme>
-  <programme start="20261103200000 +0000" stop="20261103210000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
-  </programme>
-  <programme start="20261103210000 +0000" stop="20261103220000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
-  </programme>
-  <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-5dc9b8223687ff000936ed79">
-    <title lang="en">CBS News New York 5pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">CBS News Los Angeles Mornings 8am</title>
-    <desc lang="en">CBS News Los Angeles is hyper local news streaming 24/7... for free! It's SoCal's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
-  </programme>
-  <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">CBS News Los Angeles Mornings 9am</title>
-    <desc lang="en">CBS News Los Angeles is hyper local news streaming 24/7... for free! It's SoCal's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
-  </programme>
-  <programme start="20261103180000 +0000" stop="20261103190000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">CBS News Los Angeles 10@10</title>
-    <desc lang="en">CBS News Los Angeles is hyper local news streaming 24/7... for free! It's SoCal's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
-  </programme>
-  <programme start="20261103190000 +0000" stop="20261103200000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">CBS News Los Angeles 11am</title>
-    <desc lang="en">CBS News Los Angeles is hyper local news streaming 24/7... for free! It's SoCal's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
-  </programme>
-  <programme start="20261103200000 +0000" stop="20261103210000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">Latest Los Angeles News &amp; Headlines</title>
-    <desc lang="en">Top stories in Los Angeles.</desc>
-  </programme>
-  <programme start="20261103210000 +0000" stop="20261103220000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">Latest Los Angeles News &amp; Headlines</title>
-    <desc lang="en">Top stories in Los Angeles.</desc>
-  </programme>
-  <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-5dc9b875e280c80009a8a44a">
-    <title lang="en">Latest Los Angeles News &amp; Headlines</title>
-    <desc lang="en">Top stories in Los Angeles.</desc>
-  </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">Latest Detroit News &amp; Headlines</title>
-    <desc lang="en">Latest Detroit News and Headlines.</desc>
-  </programme>
-  <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">CBS News Detroit 12pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103173000 +0000" stop="20261103180000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">CBS News Detroit 12:30pm</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103180000 +0000" stop="20261103190000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">Latest Detroit News &amp; Headlines</title>
-    <desc lang="en">Latest Detroit News and Headlines.</desc>
-  </programme>
-  <programme start="20261103190000 +0000" stop="20261103200000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">Latest Detroit News &amp; Headlines</title>
-    <desc lang="en">Latest Detroit News and Headlines.</desc>
-  </programme>
-  <programme start="20261103200000 +0000" stop="20261103210000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">Latest Detroit News &amp; Headlines</title>
-    <desc lang="en">Latest Detroit News and Headlines.</desc>
-  </programme>
-  <programme start="20261103210000 +0000" stop="20261103220000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">CBS News Detroit 4pm</title>
-    <desc lang="en">CBS News Detroit 4pm - 02/22/2023.</desc>
-  </programme>
-  <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-634f24cf3ce5fa0007c68f39">
-    <title lang="en">CBS News Detroit 5 PM</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
-  </programme>
-  <programme start="20261103150000 +0000" stop="20261103170000 +0000" channel="pluto-55b179af994403942f3061d6">
-    <title lang="en">National Update</title>
-    <desc lang="en">Live national headlines, expert interviews and insight into the stories shaping America.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103190000 +0000" channel="pluto-55b179af994403942f3061d6">
     <title lang="en">John Bachman Now</title>
@@ -560,9 +408,9 @@
     <title lang="en">Newsmax2 at 5</title>
     <desc lang="en">Breaking news and commentary covering politics, faith, and culture.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103164500 +0000" channel="pluto-5d695f7db53adf96b78e7ce3">
-    <title lang="en">Today</title>
-    <desc lang="en">Actress Rebecca Gayheart; producer Julie Ricevuto; actress Awkwafina; Today Food.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-55b179af994403942f3061d6">
+    <title lang="en">Vote for America</title>
+    <desc lang="en">Live coverage of Tuesday's election results with Newsmax's election team.</desc>
   </programme>
   <programme start="20261103164500 +0000" stop="20261103173000 +0000" channel="pluto-5d695f7db53adf96b78e7ce3">
     <title lang="en">Today</title>
@@ -600,10 +448,6 @@
     <title lang="en">Today 3rd Hour</title>
     <desc lang="en">A news program intended to inform, entertain, inspire and set the agenda each morning, offering news, weather reports, and interviews with newsmakers from the worlds of politics, business, media, entertainment and sports.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5459795fc9f133a519bc0bef">
-    <title lang="en">Morning Rush</title>
-    <desc lang="en">Kick off your day with live headlines, weather and award-winning reporting from Scripps News journalists across America.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5459795fc9f133a519bc0bef">
     <title lang="en">Scripps News On The Scene</title>
     <desc lang="en">Each weekday, Scripps News reporters take you to breaking news and live events across the country, bringing you the news as it unfolds.</desc>
@@ -628,9 +472,9 @@
     <title lang="en">Happening Now in America</title>
     <desc lang="en">Follow what's happening across America with up-to-the-minute details on the major events driving the day's top stories.</desc>
   </programme>
-  <programme start="20261103130000 +0000" stop="20261103170000 +0000" channel="pluto-640a68880e884c0009979cc2">
-    <title lang="en">Weather Command</title>
-    <desc lang="en">Going inside the Weather Command Center for America's forecast authority for all the latest breaking weather news; tracking every storm as fox weather meteorologists, contributors and correspondents deliver real-time weather alerts and forecasting.</desc>
+  <programme start="20261103230000 +0000" stop="20261104020000 +0000" channel="pluto-5459795fc9f133a519bc0bef">
+    <title lang="en">America Votes: Live Coverage Of The Midterm Elections</title>
+    <desc lang="en">Del Walters and Alisyn Camerota lead live, interactive special coverage of the 2026 midterm elections with on-the-ground reporting from inside key races.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103200000 +0000" channel="pluto-640a68880e884c0009979cc2">
     <title lang="en">America's Weather Center</title>
@@ -639,6 +483,10 @@
   <programme start="20261103200000 +0000" stop="20261103230000 +0000" channel="pluto-640a68880e884c0009979cc2">
     <title lang="en">FOX Weather Now</title>
     <desc lang="en">Ian Oliver delivers the up-to-the-minute play-by-play of the nation's weather news; Ian and friends use their experience and expertise to interpret the latest forecasts and give perspective on the day's weather news.</desc>
+  </programme>
+  <programme start="20261103230000 +0000" stop="20261104020000 +0000" channel="pluto-640a68880e884c0009979cc2">
+    <title lang="en">FOX Weather Live</title>
+    <desc lang="en">Steve Bender hosts from Studio W, the heart of fox weather, as extreme weather strikes; Steve provides real-time alerts and information to keep you and your family safe and get you ready for the next day ahead.</desc>
   </programme>
   <programme start="20261103160000 +0000" stop="20261103180000 +0000" channel="pluto-61ea25686fd777000739a272">
     <title lang="en">Top Weather News, Regional Forecasts, Live Severe Coverage, and local Washington D. C weather</title>
@@ -655,18 +503,6 @@
   <programme start="20261103220000 +0000" stop="20261104000000 +0000" channel="pluto-61ea25686fd777000739a272">
     <title lang="en">Top Weather News, Regional Forecasts, Live Severe Coverage, and local Washington D. C weather</title>
     <desc lang="en">Live weather updates every hour, regional forecasts, and your local Washington D.C. weather on the 7's.</desc>
-  </programme>
-  <programme start="20261103163000 +0000" stop="20261103164500 +0000" channel="pluto-65d92a8c8b24c80008e285c0">
-    <title lang="en">Business Today</title>
-    <desc lang="en">Bringing the latest business news and up-to-date informed analysis from London and around the world.</desc>
-  </programme>
-  <programme start="20261103164500 +0000" stop="20261103165500 +0000" channel="pluto-65d92a8c8b24c80008e285c0">
-    <title lang="en">Verified Live</title>
-    <desc lang="en">Matthew Amroliwala presents all the latest global and UK news, live from London.</desc>
-  </programme>
-  <programme start="20261103165500 +0000" stop="20261103170000 +0000" channel="pluto-65d92a8c8b24c80008e285c0">
-    <title lang="en">Clive Myrie's African Adventure</title>
-    <desc lang="en">Clive Myrie has always wanted to explore the Africa that's rarely seen on TV; he gets the chance to live life local-style and discover his family roots as he explores this vibrant land.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-65d92a8c8b24c80008e285c0">
     <title lang="en">Verified Live</title>
@@ -724,9 +560,9 @@
     <title lang="en">Newsnight</title>
     <desc lang="en">Comprehensive coverage of today's important national and international news stories.</desc>
   </programme>
-  <programme start="20261103163000 +0000" stop="20261103170000 +0000" channel="pluto-55b285cd2665de274553d66f">
-    <title lang="en">Sky News Today with Jayne Secker</title>
-    <desc lang="en">Jayne Secker with a round-up of all the main lunchtime news stories, with analysis from Sky News correspondents across the UK and around the world.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-65d92a8c8b24c80008e285c0">
+    <title lang="en">BBC News</title>
+    <desc lang="en">Twenty-four hours a day, the latest national and international stories as they break.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-55b285cd2665de274553d66f">
     <title lang="en">The News Hour with Mark Austin</title>
@@ -764,9 +600,9 @@
     <title lang="en">The Wrap With Anna Botting</title>
     <desc lang="en">Debate, analysis and insight on the biggest news stories of the day from the UK and around the world.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-54ff7ba69222cb1c2624c584">
-    <title lang="en">Bloomberg Tech</title>
-    <desc lang="en">Bloomberg Tech is the only daily live technology program with a focus on breaking news, market-moving reporting and analysis of global technology companies and stories. The program brings the audience interviews from the biggest names in the business...</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-55b285cd2665de274553d66f">
+    <title lang="en">The Wrap With Anna Botting</title>
+    <desc lang="en">Debate, analysis and insight on the biggest news stories of the day from the UK and around the world.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-54ff7ba69222cb1c2624c584">
     <title lang="en">Bloomberg Deals</title>
@@ -788,10 +624,6 @@
     <title lang="en">Election 2026</title>
     <desc lang="en">Live election results for US House and Senate races, gubernatorial races and dozens of key ballot measures.</desc>
   </programme>
-  <programme start="20261103140000 +0000" stop="20261103170000 +0000" channel="pluto-5e46fba0c43b0d00096e5ac1">
-    <title lang="en">Glenn Beck Radio</title>
-    <desc lang="en">Glenn Beck tackles progressivism with conservative solutions.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103190000 +0000" channel="pluto-5e46fba0c43b0d00096e5ac1">
     <title lang="en">The Steve Deace Show</title>
     <desc lang="en">Principled conservatism with a snarky twist served up daily.</desc>
@@ -807,10 +639,6 @@
   <programme start="20261103220000 +0000" stop="20261104000000 +0000" channel="pluto-5e46fba0c43b0d00096e5ac1">
     <title lang="en">Fearless With Jason Whitlock</title>
     <desc lang="en">Jason Whitlock and his cast of "Fearless Soldiers" protect the realm of common sense and challenge groupthink mandated by elites; the most fearless conversation at the cross-section of culture, faith, sports and comedy.</desc>
-  </programme>
-  <programme start="20261103150000 +0000" stop="20261103170000 +0000" channel="pluto-5e1f7da4bc7d740009831259">
-    <title lang="en">The War Room</title>
-    <desc lang="en">Steve Bannon and the team brings important news from around the world.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103190000 +0000" channel="pluto-5e1f7da4bc7d740009831259">
     <title lang="en">The Charlie Kirk Show</title>
@@ -831,10 +659,6 @@
   <programme start="20261103220000 +0000" stop="20261104050000 +0000" channel="pluto-5e1f7da4bc7d740009831259">
     <title lang="en">MAGA Midterm 2026 Battle for America</title>
     <desc lang="en">Your news, your opinions and your voice – its Americas Voice News</desc>
-  </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5e7cf6c7b156d500078c5f44">
-    <title lang="en">David Pollack Primetime</title>
-    <desc lang="en">David Pollack Primetime delivers a fact-driven breakdown of the day's biggest stories, going beyond the headlines to explain what's really happening and why it matters.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5e7cf6c7b156d500078c5f44">
     <title lang="en">One America News</title>
@@ -860,9 +684,9 @@
     <title lang="en">One America News</title>
     <desc lang="en">The latest breaking national and international news.</desc>
   </programme>
-  <programme start="20261103140000 +0000" stop="20261103170000 +0000" channel="pluto-66a7f0a78561260008c177f2">
-    <title lang="en">The Mike Gallagher Show</title>
-    <desc lang="en">Mike dives in to the issues of the day.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5e7cf6c7b156d500078c5f44">
+    <title lang="en">Fine Point With Chanel Rion</title>
+    <desc lang="en">Chanel Rion leads bold and uncensored discourse on Big Tech, Big Media, and Big Government. From thought leaders to world leaders, join Chanel as she pierces through the scripts, and reads between the lies. Weeknights on OAN.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-66a7f0a78561260008c177f2">
     <title lang="en">Sekulow</title>
@@ -876,9 +700,9 @@
     <title lang="en">The Hugh Hewitt Show</title>
     <desc lang="en">Hugh Hewitt discusses current events.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5d486acc34ceb37d3c458a64">
-    <title lang="en">Predictable W/stu</title>
-    <desc lang="en">The First is the new network for free speech and big ideas. The First is designed for conservative Americans, featuring intelligent analysis from hosts Dana Loesch, Buck Sexton, Jesse Kelly and other top talent.</desc>
+  <programme start="20261103230000 +0000" stop="20261104060000 +0000" channel="pluto-66a7f0a78561260008c177f2">
+    <title lang="en">Decision 2026</title>
+    <desc lang="en">Election night coverage.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5d486acc34ceb37d3c458a64">
     <title lang="en">The Dana Show</title>
@@ -908,10 +732,9 @@
     <title lang="en">The Dana Show</title>
     <desc lang="en">Dana Loesch is the number one nationally-syndicated female talk radio host in the country and hosts her award-winning show, "The Dana Show."</desc>
   </programme>
-  <programme start="20261103153516 +0000" stop="20261103163522 +0000" channel="pluto-677d9adfa9a51b0008497fa0">
-    <title lang="en">UFC Main Event</title>
-    <sub-title lang="en">UFC Main Event: Teixeira vs Prochazka</sub-title>
-    <desc lang="en">Glover Teixeira defends the title against surging contender Jiri Prochazka.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5d486acc34ceb37d3c458a64">
+    <title lang="en">The Dana Show</title>
+    <desc lang="en">Dana Loesch is the number one nationally-syndicated female talk radio host in the country and hosts her award-winning show, "The Dana Show."</desc>
   </programme>
   <programme start="20261103163522 +0000" stop="20261103173527 +0000" channel="pluto-677d9adfa9a51b0008497fa0">
     <title lang="en">UFC Main Event</title>
@@ -947,9 +770,10 @@
     <title lang="en">100 UFC Submissions!</title>
     <desc lang="en">Sit back and watch 100 of the best submissions in UFC history.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5e9f2c05172a0f0007db4786">
-    <title lang="en">What 2 Watch</title>
-    <desc lang="en">CBS Sports HQ keeps you completely up to speed on the latest news and headlines.</desc>
+  <programme start="20261103224449 +0000" stop="20261103230014 +0000" channel="pluto-677d9adfa9a51b0008497fa0">
+    <title lang="en">Highlights from Saturday's UFC!</title>
+    <sub-title lang="en">SCARY FINISHES From UFC Vegas 123</sub-title>
+    <desc lang="en">Relive the awesome night from UFC Vegas 123, featuring all 6 incredible finishes!</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103200000 +0000" channel="pluto-5e9f2c05172a0f0007db4786">
     <title lang="en">Just Football</title>
@@ -963,10 +787,9 @@
     <title lang="en">CBS Sports HQ Spotlight</title>
     <desc lang="en">Sports news and highlights.</desc>
   </programme>
-  <programme start="20261103163000 +0000" stop="20261103170000 +0000" channel="pluto-5ced7d5df64be98e07ed47b6">
-    <title lang="en">NFL Throwback</title>
-    <sub-title lang="en">Top 10 Shockingly Good Teams</sub-title>
-    <desc lang="en">No dream teams here. Take a look into ten teams that were successful despite lacking the desired talent.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5e9f2c05172a0f0007db4786">
+    <title lang="en">Primetime Pregame LIVE</title>
+    <desc lang="en">HQ's experts dissect upcoming games and dish out top bets.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173400 +0000" channel="pluto-5ced7d5df64be98e07ed47b6">
     <title lang="en">NFL Throwback</title>
@@ -998,9 +821,9 @@
     <sub-title lang="en">Top Plays of the Week</sub-title>
     <desc lang="en">Best moments and compilations including player highlights, top plays and game highlights from Week 8 of the 2026 NFL season.</desc>
   </programme>
-  <programme start="20261103163000 +0000" stop="20261103170000 +0000" channel="pluto-5a74b8e1e22a61737979c6bf">
-    <title lang="en">First Things First: OT</title>
-    <desc lang="en">Nick Wright, Chris Broussard, Kevin Wildes and OT anchor Danny Parkins offer their opinions on the day's sports stories.</desc>
+  <programme start="20261103225900 +0000" stop="20261103235900 +0000" channel="pluto-5ced7d5df64be98e07ed47b6">
+    <title lang="en">NFL Daily</title>
+    <desc lang="en">Gregg Rosenthal and a rotating crew of elite NFL Media co-hosts recap all the action from Sunday's games with highlights, instant reactions and analysis of the biggest storylines from Week 8 of the 2026 NFL season.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5a74b8e1e22a61737979c6bf">
     <title lang="en">The Herd With Colin Cowherd</title>
@@ -1050,9 +873,9 @@
     <title lang="en">First Things First: OT</title>
     <desc lang="en">Nick Wright, Chris Broussard, Kevin Wildes and OT anchor Danny Parkins offer their opinions on the day's sports stories.</desc>
   </programme>
-  <programme start="20261103140000 +0000" stop="20261103170000 +0000" channel="pluto-6549306c83595c000815a696">
-    <title lang="en">The Dan Patrick Show</title>
-    <desc lang="en">Dan Patrick's daily national sports talk program, with interviews and discussions with some of the biggest stars in sports and entertainment.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5a74b8e1e22a61737979c6bf">
+    <title lang="en">The Herd With Colin Cowherd</title>
+    <desc lang="en">A thought-provoking, opinionated and topic-driven journey through the top sports stories of the day with host Colin Cowherd.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-6549306c83595c000815a696">
     <title lang="en">Not So Fast With Pabst &amp; Perloff</title>
@@ -1069,6 +892,10 @@
   <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-6549306c83595c000815a696">
     <title lang="en">Not So Fast With Pabst &amp; Perloff</title>
     <desc lang="en">Paul Pabst and Andrew Perloff challenge each other on the sports topics of the day; expect analysis, warm takes, special guests and appearances by Dan Patrick.</desc>
+  </programme>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-6549306c83595c000815a696">
+    <title lang="en">The 2 Robbies</title>
+    <desc lang="en">Robbie Mustoe and Robbie Earle deliver expert analysis, tactical deep dives and candid opinions on the Premier League's biggest matches, standout players and top storylines.</desc>
   </programme>
   <programme start="20261103150300 +0000" stop="20261103171800 +0000" channel="pluto-6792c30abc03978b9b8bb832">
     <title lang="en">Hardwood Classics</title>
@@ -1110,10 +937,10 @@
     <sub-title lang="en">Oct. 28, 2026</sub-title>
     <desc lang="en">Recap Wednesday's regular season action!</desc>
   </programme>
-  <programme start="20261103154554 +0000" stop="20261103163054 +0000" channel="pluto-5e66968a70f34c0007d050be">
-    <title lang="en">World Series Film</title>
-    <sub-title lang="en">Reliving the 1949 World Series' biggest moments</sub-title>
-    <desc lang="en">Watch the biggest moments from the 1949 World Series and the Yankees' 4-1 win over the Dodgers.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233500 +0000" channel="pluto-6792c30abc03978b9b8bb832">
+    <title lang="en">NBA's Nightly Recap</title>
+    <sub-title lang="en">11/01/26</sub-title>
+    <desc lang="en">Never miss a moment of NBA highlights, bringing you closer to your favorite players and teams.</desc>
   </programme>
   <programme start="20261103163054 +0000" stop="20261103173054 +0000" channel="pluto-5e66968a70f34c0007d050be">
     <title lang="en">The Sounds of Baseball</title>
@@ -1148,10 +975,6 @@
     <sub-title lang="en">10/23/26: Brewers' early lead fuels Game 1 win</sub-title>
     <desc lang="en">An early lead and Jacob Misiorowski's solid start help the Brewers' secure a win in Game 1.</desc>
   </programme>
-  <programme start="20261103153000 +0000" stop="20261103170000 +0000" channel="pluto-5de94dacb394a300099fa22a">
-    <title lang="en">Chasing Sunday: THE PLAYERS Championship</title>
-    <desc lang="en">Unprecedented, week-long access to TOUR pros who agreed to be mic'd up during all four rounds of competition. Follow as they navigate the pressure, preparation and pivotal moments at TPC Sawgrass.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5de94dacb394a300099fa22a">
     <title lang="en">PGA TOUR Backspin</title>
     <desc lang="en">Watch the latest highlights from the best players in the world from courses around the PGA TOUR.</desc>
@@ -1181,6 +1004,10 @@
     <title lang="en">The Starter</title>
     <desc lang="en">Catch up on all the latest happenings on the PGA TOUR with feature content on the best players in the world.</desc>
   </programme>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5de94dacb394a300099fa22a">
+    <title lang="en">PGA TOUR Rewind</title>
+    <desc lang="en">Watch the PGA Tour champion's shot-making and winning moments as he takes home the trophy.</desc>
+  </programme>
   <programme start="20261103161100 +0000" stop="20261103171000 +0000" channel="pluto-65493029ab052400089e9d2f">
     <title lang="en">Glam Golf With Blair O'Neal</title>
     <sub-title lang="en">Birdie Challenge with Aaron Hicks &amp; Hailey Ostrom</sub-title>
@@ -1209,6 +1036,11 @@
     <title lang="en">5 Clubs With Gary Williams</title>
     <desc lang="en">Viewpoints of people in the game with people who love the game; we discuss what is of interest to them in the vast and deep reservoir of stories within the game of golf.</desc>
   </programme>
+  <programme start="20261103225500 +0000" stop="20261103232000 +0000" channel="pluto-65493029ab052400089e9d2f">
+    <title lang="en">Martin Hall: Breaking 80</title>
+    <sub-title lang="en">Martin Hall Part 1</sub-title>
+    <desc lang="en">Martin Hall gives lessons to crush the driver, stick the approach and more keys for breaking 80.</desc>
+  </programme>
   <programme start="20261103140000 +0000" stop="20261103200000 +0000" channel="pluto-681109b688b9d85d0938c6ba">
     <title lang="en">Tennis Today Live</title>
     <sub-title lang="en">Paris-ATP &amp; Chennai-WTA Early Rounds</sub-title>
@@ -1222,10 +1054,6 @@
   <programme start="20261104010000 +0000" stop="20261104020000 +0000" channel="pluto-681109b688b9d85d0938c6ba">
     <title lang="en">WTA Race to the Finals</title>
     <desc lang="en">See the best players of the year in the 2025 WTA Finals.</desc>
-  </programme>
-  <programme start="20261103150000 +0000" stop="20261103170000 +0000" channel="pluto-63a0e33a45264d000850ed7e">
-    <title lang="en">Morning Footy</title>
-    <desc lang="en">Kick off your day with our daily morning soccer show, bringing you the latest news from across the globe, match highlights, interviews and more.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103174500 +0000" channel="pluto-63a0e33a45264d000850ed7e">
     <title lang="en">Champions League Matchday</title>
@@ -1249,11 +1077,6 @@
     <title lang="en">The Champions Club</title>
     <desc lang="en">Live studio program with extensive UEFA Champions League match highlights and analysis.</desc>
   </programme>
-  <programme start="20261103140000 +0000" stop="20261103170000 +0000" channel="pluto-65ea8b928145cb0008509426">
-    <title lang="en">UCL Extended Highlights</title>
-    <sub-title lang="en">2025-26 League Phase, Matchday 1</sub-title>
-    <desc lang="en">UEFA Champions League is the year-round destination for nonstop highlights and goals from the world’s most prestigious club soccer tournament.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103190000 +0000" channel="pluto-65ea8b928145cb0008509426">
     <title lang="en">UCL Match Replay</title>
     <sub-title lang="en">Lille vs. Galatasaray</sub-title>
@@ -1268,6 +1091,11 @@
     <title lang="en">UCL Match Replay</title>
     <sub-title lang="en">Sporting CP vs. Marseille</sub-title>
     <desc lang="en">2025 League Phase, Matchday 3.</desc>
+  </programme>
+  <programme start="20261103230000 +0000" stop="20261104010000 +0000" channel="pluto-65ea8b928145cb0008509426">
+    <title lang="en">UCL Match Replay</title>
+    <sub-title lang="en">Inter Milan vs. Shakhtar Donetsk</sub-title>
+    <desc lang="en">2026 Group Stage, Matchday 3.</desc>
   </programme>
   <programme start="20261103155305 +0000" stop="20261103172444 +0000" channel="pluto-60d39387706fe50007fda8e8">
     <title lang="en">2026- PBR Premier Series</title>
@@ -1289,9 +1117,10 @@
     <sub-title lang="en">2026 Unleash the Beast Albuquerque Day 3</sub-title>
     <desc lang="en">Championship Sunday at the PBR Ty Murray Invitational inside The Pit in Albuquerque, N.M.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-64d160f53c785e0008df525e">
-    <title lang="en">Michael Carbajal vs Humberto Gonzalez 1</title>
-    <desc lang="en">On March 13th, 1993, Michael Carbajal fought Humberto Gonzalez for the WBC and IBF Light Flyweight Titles in Las Vegas. After being knocked down twice earlier in the fight, Carbajal made an incredible comeback, knocking out Gonzalez in the 7th round.</desc>
+  <programme start="20261103224609 +0000" stop="20261104005431 +0000" channel="pluto-60d39387706fe50007fda8e8">
+    <title lang="en">2026- PBR Premier Series</title>
+    <sub-title lang="en">2026 Unleash the Beast Sioux Falls Day 1</sub-title>
+    <desc lang="en">The PBR Unleash The Beast takes over Sioux Falls for the final three-day event of the 2026 season!</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-64d160f53c785e0008df525e">
     <title lang="en">Micky Ward vs Alfonso Sanchez</title>
@@ -1325,10 +1154,9 @@
     <title lang="en">Miguel Cotto vs Ricardo Mayorga</title>
     <desc lang="en">On March 12th, 2011, Miguel Cotto fought Ricardo Mayorga for the World Super Welterweight Championship at the MGM Grand in Las Vegas. In a great fight, Miguel Cotto prevailed, knocking down Mayorga in the final round and getting the stoppage.</desc>
   </programme>
-  <programme start="20261103153900 +0000" stop="20261103163300 +0000" channel="pluto-649b6898f2ec0000081a9460">
-    <title lang="en">Boxing</title>
-    <sub-title lang="en">Fabio Wardley vs. Justis Huni</sub-title>
-    <desc lang="en">Fabio Wardley vs. Justis Huni - Main Event Replay.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-64d160f53c785e0008df525e">
+    <title lang="en">Miguel Cotto vs Sergio Martinez</title>
+    <desc lang="en">On June 7th, 2014 Miguel Cotto and Sergio Martinez fought eachother for the WBC world middleweight titles in a bout that ended early in the tenth round with a victory for Cotto.</desc>
   </programme>
   <programme start="20261103163300 +0000" stop="20261103173900 +0000" channel="pluto-649b6898f2ec0000081a9460">
     <title lang="en">Boxing</title>
@@ -1369,6 +1197,11 @@
     <title lang="en">Boxing</title>
     <sub-title lang="en">Fabio Wardley vs. Justis Huni</sub-title>
     <desc lang="en">Fabio Wardley vs. Justis Huni - Main Event Replay.</desc>
+  </programme>
+  <programme start="20261103223400 +0000" stop="20261103234000 +0000" channel="pluto-649b6898f2ec0000081a9460">
+    <title lang="en">Boxing</title>
+    <sub-title lang="en">2018: Anthony Joshua vs. Joseph Parker</sub-title>
+    <desc lang="en">Anthony Joshua takes on Joseph Parker for the IBF/WBA/WBO heavyweight title unification bout, 12 rounds. From March 31, 2018, in Cardiff, Wales.</desc>
   </programme>
   <programme start="20261103161500 +0000" stop="20261103171500 +0000" channel="pluto-5ebc8688f3697d00072f7cf8">
     <title lang="en">Bellator MMA Full Fight Cards</title>
@@ -1414,11 +1247,6 @@
     <title lang="en">Best of PFL</title>
     <sub-title lang="en">2026: Alexander Volkov Fight Compilation</sub-title>
     <desc lang="en">Alexander Volkov had some crazy scraps, here are some of our favorites!</desc>
-  </programme>
-  <programme start="20261103151542 +0000" stop="20261103164729 +0000" channel="pluto-6a30478d0be0264f4a4e227c">
-    <title lang="en">WWE NXT</title>
-    <sub-title lang="en">May 26th 2026</sub-title>
-    <desc lang="en">Lola Vice brings the heat to Izzi Dame in an NXT Women's Championship Match. A new Men's Speed Tournament begins.</desc>
   </programme>
   <programme start="20261103164729 +0000" stop="20261103182737 +0000" channel="pluto-6a30478d0be0264f4a4e227c">
     <title lang="en">WWE NXT</title>
@@ -1516,11 +1344,6 @@
     <sub-title lang="en">Round 1: Melbourne Vipers vs. Perth Steel</sub-title>
     <desc lang="en">The 2026 Australian Volleyball Super League season opens as Melbourne faces Perth in Round 1.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5616f9c0ada51f8004c4b091">
-    <title lang="en">World Poker Tour</title>
-    <sub-title lang="en">WPT Seminole Hard Rock Part 2</sub-title>
-    <desc lang="en">Six players compete in South Florida for the more than $660,000 first-place prize in the WPT Seminole Hard Rock.</desc>
-  </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5616f9c0ada51f8004c4b091">
     <title lang="en">World Poker Tour</title>
     <sub-title lang="en">WPT Seminole Hard Rock Part 3</sub-title>
@@ -1551,6 +1374,11 @@
     <sub-title lang="en">WPT World Championship Part 2</sub-title>
     <desc lang="en">Four players compete at the luxurious Bellagio for the more than $1.1 million top prize in the season-ending WPT World Championship.</desc>
   </programme>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5616f9c0ada51f8004c4b091">
+    <title lang="en">World Poker Tour</title>
+    <sub-title lang="en">WPT World Championship Part 3</sub-title>
+    <desc lang="en">Three players compete at the luxurious Bellagio for the more than $1.1 million top prize in the season-ending WPT World Championship.</desc>
+  </programme>
   <programme start="20261103150000 +0000" stop="20261103210000 +0000" channel="pluto-5fc54366b04b2300072e31af">
     <title lang="en">US Poker Open 2024</title>
     <sub-title lang="en">Event #6 $15K No-Limit Hold'em</sub-title>
@@ -1566,10 +1394,10 @@
     <sub-title lang="en">Week 1: Commentators III</sub-title>
     <desc lang="en">Features Howard Lederer, Gabe Kaplan, Joe Sebok, Ali Nejad, Mark Gregorich and Kara Scott.</desc>
   </programme>
-  <programme start="20261103155500 +0000" stop="20261103164700 +0000" channel="pluto-65c69b683ba51e00084534a3">
-    <title lang="en">Monster Jam Stadium Championship Series</title>
-    <sub-title lang="en">Ford Field - Detroit, MI</sub-title>
-    <desc lang="en">The competition heats up at Detroit's Ford Field.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5fc54366b04b2300072e31af">
+    <title lang="en">Poker After Dark</title>
+    <sub-title lang="en">Week 1: Commentators III</sub-title>
+    <desc lang="en">Features Howard Lederer, Gabe Kaplan, Joe Sebok, Ali Nejad, Mark Gregorich and Kara Scott.</desc>
   </programme>
   <programme start="20261103164700 +0000" stop="20261103171800 +0000" channel="pluto-65c69b683ba51e00084534a3">
     <title lang="en">Monster Jam Stadium Championship Series</title>
@@ -1611,11 +1439,6 @@
     <sub-title lang="en">Top Freestyles And Racing Wins Compilation</sub-title>
     <desc lang="en">Watch exciting Monster Jam freestyle action with backflips, forward momentum poppers, and more!</desc>
   </programme>
-  <programme start="20261103155115 +0000" stop="20261103164246 +0000" channel="pluto-6400f731d200410008f9b339">
-    <title lang="en">Custom Carolina</title>
-    <sub-title lang="en">'67 'Vette Retro Racer</sub-title>
-    <desc lang="en">Tommy puts his spin on a classic '67 Corvette and goes "full-tilt bozo."</desc>
-  </programme>
   <programme start="20261103164246 +0000" stop="20261103173416 +0000" channel="pluto-6400f731d200410008f9b339">
     <title lang="en">Custom Carolina</title>
     <sub-title lang="en">'67 Vette Hits the Track</sub-title>
@@ -1655,11 +1478,6 @@
     <title lang="en">Faster With Finnegan</title>
     <sub-title lang="en">Flares and Flair: Thunderin' Left in a Fox Body!</sub-title>
     <desc lang="en">The guys slap a supercharger on a '78 Fairmont and take on a stock car.</desc>
-  </programme>
-  <programme start="20261103162900 +0000" stop="20261103165500 +0000" channel="pluto-63b48016d9dd51000828fa37">
-    <title lang="en">Detroit Muscle</title>
-    <sub-title lang="en">Bulletproof Poncho</sub-title>
-    <desc lang="en">A 500 horse pump gas Pontiac is built.</desc>
   </programme>
   <programme start="20261103165500 +0000" stop="20261103172000 +0000" channel="pluto-63b48016d9dd51000828fa37">
     <title lang="en">Detroit Muscle</title>
@@ -1731,10 +1549,10 @@
     <sub-title lang="en">Cop Brakes, Cop Suspension...Cop Turbo?</sub-title>
     <desc lang="en">The crew boosts a Crown Vic. Go under the hood of an old Ford Crown Vic police cruiser with some high-pursuit performance goodies.</desc>
   </programme>
-  <programme start="20261103155238 +0000" stop="20261103164243 +0000" channel="pluto-66e0b4536ad04d0008fff4b2">
-    <title lang="en">American Dynasties: The Kennedys</title>
-    <sub-title lang="en">The Legacy</sub-title>
-    <desc lang="en">Tragedy strikes again when Bobby Kennedy is assassinated in 1968.</desc>
+  <programme start="20261103224700 +0000" stop="20261103231400 +0000" channel="pluto-63b48016d9dd51000828fa37">
+    <title lang="en">Detroit Muscle</title>
+    <sub-title lang="en">Beefing Up a Police Cruiser With New Brakes and Suspension</sub-title>
+    <desc lang="en">Beefing up the police cruiser's suspension and brake.</desc>
   </programme>
   <programme start="20261103164243 +0000" stop="20261103173045 +0000" channel="pluto-66e0b4536ad04d0008fff4b2">
     <title lang="en">Race For The White House</title>
@@ -1776,11 +1594,6 @@
     <sub-title lang="en">Portrait of a Leader</sub-title>
     <desc lang="en">A lawyer from Illinois ascends from obscurity to the White House.</desc>
   </programme>
-  <programme start="20261103154400 +0000" stop="20261103164000 +0000" channel="pluto-656535fc2c46f30008870fae">
-    <title lang="en">Natural World</title>
-    <sub-title lang="en">In the Eye of the Wind</sub-title>
-    <desc lang="en">From the windswept tundra of Arctic Russia to the lava-spewing volcanoes of Hawaii, a great migration is underway.</desc>
-  </programme>
   <programme start="20261103164000 +0000" stop="20261103173700 +0000" channel="pluto-656535fc2c46f30008870fae">
     <title lang="en">Natural World</title>
     <sub-title lang="en">The Lost Elephants of Timbuktu</sub-title>
@@ -1811,10 +1624,10 @@
     <sub-title lang="en">Badgers: Secrets of the Sett</sub-title>
     <desc lang="en">While badgers are easily recognized, remarkably few people have ever seen one alive; it's a creature blamed for destruction and disease, but surprisingly little is known about the sett society.</desc>
   </programme>
-  <programme start="20261103155500 +0000" stop="20261103165500 +0000" channel="pluto-673bf05ddaad7f0008ac7a5c">
-    <title lang="en">Science of Walking With Beasts</title>
-    <sub-title lang="en">Triumph of the Beast</sub-title>
-    <desc lang="en">This episode explains how the 120-million-year reign of the dinosaurs ended when mammals became the fastest and fiercest creatures on the planet.</desc>
+  <programme start="20261103223100 +0000" stop="20261103232800 +0000" channel="pluto-656535fc2c46f30008870fae">
+    <title lang="en">Natural World</title>
+    <sub-title lang="en">Echo Ely and Friends - Africa's Forgotten Elephants</sub-title>
+    <desc lang="en">This film goes beyond events at the Amboseli National Park, in search of elephants living in Africa's vast landscape.</desc>
   </programme>
   <programme start="20261103165500 +0000" stop="20261103175400 +0000" channel="pluto-673bf05ddaad7f0008ac7a5c">
     <title lang="en">Science of Walking With Beasts</title>
@@ -1851,6 +1664,11 @@
     <sub-title lang="en">New Blood</sub-title>
     <desc lang="en">The life of the first reptilian carnivores on Earth, told through computer animation.</desc>
   </programme>
+  <programme start="20261103224000 +0000" stop="20261103231700 +0000" channel="pluto-673bf05ddaad7f0008ac7a5c">
+    <title lang="en">Walking with Dinosaurs</title>
+    <sub-title lang="en">Time of the Titans</sub-title>
+    <desc lang="en">The Jurassic period saw the advent of the largest and strongest dinosaurs that ever roamed the Earth.</desc>
+  </programme>
   <programme start="20261103155500 +0000" stop="20261103175800 +0000" channel="pluto-640a64bd73e013000893d4e0">
     <title lang="en">Nature</title>
     <sub-title lang="en">Invasion of the Giant Pythons</sub-title>
@@ -1880,6 +1698,11 @@
     <title lang="en">Nature's Greatest Talents</title>
     <sub-title lang="en">Masters of Disguise</sub-title>
     <desc lang="en">The filmmakers explore how animals disguise themselves with their skin, fur and feathers to hunt their prey and fend off their predators.</desc>
+  </programme>
+  <programme start="20261103225400 +0000" stop="20261103235300 +0000" channel="pluto-640a64bd73e013000893d4e0">
+    <title lang="en">Wild Winners</title>
+    <sub-title lang="en">The Power of the Velvet Paw</sub-title>
+    <desc lang="en">A look at the big cats of the jungle and how they embody the attributes of power, elegance and being imposing.</desc>
   </programme>
   <programme start="20261103161500 +0000" stop="20261103171500 +0000" channel="pluto-66df8a29b25d2b0008fc5fe0">
     <title lang="en">Brazil Untamed</title>
@@ -1915,10 +1738,6 @@
     <sub-title lang="en">Meerkat Survival School</sub-title>
     <desc lang="en">Boning up on desert eats; flirting with lions; witnessing an elephant babysitters' club.</desc>
   </programme>
-  <programme start="20261103155900 +0000" stop="20261103165900 +0000" channel="pluto-5812bd9f249444e05d09cc4e">
-    <title lang="en">Crystal Canyon River</title>
-    <desc lang="en">A relaxation video begins in the heart of California's King's Canyon National Park at Mist Falls, hidden along King River, and winds through vibrant forests and natural rock formations.</desc>
-  </programme>
   <programme start="20261103165900 +0000" stop="20261103175900 +0000" channel="pluto-5812bd9f249444e05d09cc4e">
     <title lang="en">America From Above</title>
     <sub-title lang="en">Iowa, Colorado, Utah, California</sub-title>
@@ -1944,9 +1763,10 @@
     <title lang="en">Autumn from Above</title>
     <desc lang="en">Basking in the glow of the colors of fall, from above.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-696998dfa2b623e8b20125a3">
-    <title lang="en">Water Therapy With Calm Music</title>
-    <desc lang="en">Escape any Blue Monday with soothing music and meditative water-focused scenes.</desc>
+  <programme start="20261103225900 +0000" stop="20261103235900 +0000" channel="pluto-5812bd9f249444e05d09cc4e">
+    <title lang="en">SereneScapes</title>
+    <sub-title lang="en">Death Valley Desert: California</sub-title>
+    <desc lang="en">Feeling the wondrous expanse of a spectacular desert surrounded by towering mountain peaks.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103190000 +0000" channel="pluto-696998dfa2b623e8b20125a3">
     <title lang="en">Peaceful Piano &amp; Guitar</title>
@@ -1959,6 +1779,10 @@
   <programme start="20261103210000 +0000" stop="20261103230000 +0000" channel="pluto-696998dfa2b623e8b20125a3">
     <title lang="en">The Zen Home Spa</title>
     <desc lang="en">Transform your room into an oasis of wellness with ZenLIFE's Home Spa.</desc>
+  </programme>
+  <programme start="20261103230000 +0000" stop="20261104010000 +0000" channel="pluto-696998dfa2b623e8b20125a3">
+    <title lang="en">Peaceful Piano &amp; Guitar</title>
+    <desc lang="en">Selections of peaceful music and scenes that help you work and relax.</desc>
   </programme>
   <programme start="20261103163000 +0000" stop="20261103170200 +0000" channel="pluto-5bb1ad55268cae539bcedb08">
     <title lang="en">Best Pets of the Month</title>
@@ -2019,10 +1843,10 @@
     <sub-title lang="en">Grass Clowns</sub-title>
     <desc lang="en">These animals finished at the top of their class at clowning.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-664fd48894d5580008e45e7c">
-    <title lang="en">Dog Whisperer</title>
-    <sub-title lang="en">Most Aggressive Breeds</sub-title>
-    <desc lang="en">Cesar revisits some of his toughest cases and explores the history or misunderstood dog breeds to dispel myths about aggression.</desc>
+  <programme start="20261103224600 +0000" stop="20261103231800 +0000" channel="pluto-5bb1ad55268cae539bcedb08">
+    <title lang="en">Animals Unscripted</title>
+    <sub-title lang="en">Air Bud</sub-title>
+    <desc lang="en">Dogs with interesting skills.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-664fd48894d5580008e45e7c">
     <title lang="en">Dog Whisperer</title>
@@ -2054,9 +1878,10 @@
     <sub-title lang="en">How to Raise the Perfect Dog</sub-title>
     <desc lang="en">Cesar adopts four puppies and films them living with him and his pack for their first eight months to demonstrate how to raise a balanced dog.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-60f75919718aed0007250d7a">
-    <title lang="en">WJZ News 9am</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-664fd48894d5580008e45e7c">
+    <title lang="en">Dog Whisperer</title>
+    <sub-title lang="en">Attacking Cujo</sub-title>
+    <desc lang="en">An aggressive lab-mastiff mix; a Jack Russell mix that barks obsessively; a woman is concerned at her dog's habit of barking and growling at people.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-60f75919718aed0007250d7a">
     <title lang="en">WJZ News 12pm</title>
@@ -2086,8 +1911,8 @@
     <title lang="en">WJZ News 5pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1afb21486df0007abc57c">
-    <title lang="en">CBS News Bay Area: Morning Edition</title>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-60f75919718aed0007250d7a">
+    <title lang="en">WJZ News 6pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5eb1afb21486df0007abc57c">
@@ -2118,9 +1943,9 @@
     <title lang="en">Latest NorCal News &amp; Headlines</title>
     <desc lang="en">CBS News Bay Area is hyper local news streaming 24/7... for free! It's the Bay Area's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1af2ad345340008fccd1e">
-    <title lang="en">Latest Boston News &amp; Headlines</title>
-    <desc lang="en">Top stories in Boston.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5eb1afb21486df0007abc57c">
+    <title lang="en">Latest NorCal News &amp; Headlines</title>
+    <desc lang="en">CBS News Bay Area is hyper local news streaming 24/7... for free! It's the Bay Area's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5eb1af2ad345340008fccd1e">
     <title lang="en">WBZ News 12pm</title>
@@ -2150,9 +1975,9 @@
     <title lang="en">WBZ News 5p</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-632b62b3982d0d000755a2be">
-    <title lang="en">Live Local News</title>
-    <desc lang="en">Boston 25 News brings you local breaking news, severe weather coverage, and live events 24/7 from Boston, New Hampshire, and all of New England.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eb1af2ad345340008fccd1e">
+    <title lang="en">WBZ News 6pm</title>
+    <desc lang="en">Evening news coverage.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-632b62b3982d0d000755a2be">
     <title lang="en">Live Local News</title>
@@ -2178,9 +2003,9 @@
     <title lang="en">Live Local News</title>
     <desc lang="en">Boston 25 News brings you local breaking news, severe weather coverage, and live events 24/7 from Boston, New Hampshire, and all of New England.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1aeb2fd4b8a00076c2047">
-    <title lang="en">CBS News Chicago 9am</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233500 +0000" channel="pluto-632b62b3982d0d000755a2be">
+    <title lang="en">Live Local News</title>
+    <desc lang="en">Boston 25 News brings you local breaking news, severe weather coverage, and live events 24/7 from Boston, New Hampshire, and all of New England.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5eb1aeb2fd4b8a00076c2047">
     <title lang="en">CBS News Chicago 11am</title>
@@ -2210,9 +2035,9 @@
     <title lang="en">CBS News Chicago 4pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1b12146cba40007aa7e5d">
-    <title lang="en">CBS Colorado Mornings This 9am</title>
-    <desc lang="en">CBS News Colorado is hyper local news streaming 24/7... for free! It's Colorado’s place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eb1aeb2fd4b8a00076c2047">
+    <title lang="en">CBS News Chicago 5pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5eb1b12146cba40007aa7e5d">
     <title lang="en">CBS News Colorado This Morning</title>
@@ -2242,9 +2067,9 @@
     <title lang="en">Latest Colorado News &amp; Headlines</title>
     <desc lang="en">Top stories in Colorado.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-634f2610d5023700078f7dee">
-    <title lang="en">Latest Detroit News &amp; Headlines</title>
-    <desc lang="en">Latest Detroit News and Headlines.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5eb1b12146cba40007aa7e5d">
+    <title lang="en">CBS News Colorado First at 4</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-634f2610d5023700078f7dee">
     <title lang="en">CBS News Detroit 12pm</title>
@@ -2274,9 +2099,9 @@
     <title lang="en">CBS News Detroit 5 PM</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5dc481cda1d430000948a1b4">
-    <title lang="en">CBS News Los Angeles Mornings 8am</title>
-    <desc lang="en">CBS News Los Angeles is hyper local news streaming 24/7... for free! It's SoCal's place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-634f2610d5023700078f7dee">
+    <title lang="en">CBS News Detroit 6pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5dc481cda1d430000948a1b4">
     <title lang="en">CBS News Los Angeles Mornings 9am</title>
@@ -2302,9 +2127,9 @@
     <title lang="en">Latest Los Angeles News &amp; Headlines</title>
     <desc lang="en">Top stories in Los Angeles.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-60fb299b79498900070b29e0">
-    <title lang="en">Latest Miami News &amp; Headlines</title>
-    <desc lang="en">Top stories in Miami.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-5dc481cda1d430000948a1b4">
+    <title lang="en">Latest Los Angeles News &amp; Headlines</title>
+    <desc lang="en">Top stories in Los Angeles.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-60fb299b79498900070b29e0">
     <title lang="en">CBS News Miami 12PM</title>
@@ -2334,9 +2159,9 @@
     <title lang="en">CBS News Miami 5pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103163000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1b0bf2240d8000732a09c">
-    <title lang="en">Latest Minnesota News &amp; Headlines</title>
-    <desc lang="en">Top stories in Minnesota.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-60fb299b79498900070b29e0">
+    <title lang="en">CBS News Miami 6 PM</title>
+    <desc lang="en">CBS News Miami is hyper local news streaming 24/7... for free! It’s South Florida’s place to get top stories, breaking news, weather, traffic and more. Check us out. We’re always on.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-5eb1b0bf2240d8000732a09c">
     <title lang="en">Latest Minnesota News &amp; Headlines</title>
@@ -2366,9 +2191,9 @@
     <title lang="en">The 4 from WCCO News</title>
     <desc lang="en">News that gives viewers a deeper understanding of what's happening while offering them reasons to smile and be proud of where they live.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5dc48170e280c80009a861ab">
-    <title lang="en">Latest New York News &amp; Headlines</title>
-    <desc lang="en">Top stories in New York.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eb1b0bf2240d8000732a09c">
+    <title lang="en">WCCO News at 5pm</title>
+    <desc lang="en">Local and regional news coverage.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5dc48170e280c80009a861ab">
     <title lang="en">CBS News New York 12pm</title>
@@ -2398,9 +2223,9 @@
     <title lang="en">CBS News New York 5pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103163000 +0000" stop="20261103170000 +0000" channel="pluto-5fff49cfb5cd4f0007c2b0dc">
-    <title lang="en">Be Well</title>
-    <desc lang="en">Healthy protein packed dishes for women over 40 plus actress Julia Antonelli discusses pet adoption.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5dc48170e280c80009a861ab">
+    <title lang="en">CBS News New York 6pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5fff49cfb5cd4f0007c2b0dc">
     <title lang="en">Daytime Headlines</title>
@@ -2450,9 +2275,9 @@
     <title lang="en">5:30PM Evening Headlines</title>
     <desc lang="en">Breaking news, headlines, and local stories from New York, New Jersey, and Connecticut.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1b05ea168cc000767ba67">
-    <title lang="en">CBS News Philadelphia 9am</title>
-    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5fff49cfb5cd4f0007c2b0dc">
+    <title lang="en">6PM Evening Headlines</title>
+    <desc lang="en">Breaking news, headlines, and local stories from New York, New Jersey, and Connecticut.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5eb1b05ea168cc000767ba67">
     <title lang="en">CBS News Philadelphia 12pm</title>
@@ -2482,9 +2307,9 @@
     <title lang="en">CBS News Philadelphia 5pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eb1b17aa5277e00083f6521">
-    <title lang="en">KDKA Morning News 8am</title>
-    <desc lang="en">Taking a look at the important news to start the day.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eb1b05ea168cc000767ba67">
+    <title lang="en">CBS News Philadelphia 6pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5eb1b17aa5277e00083f6521">
     <title lang="en">KDKA News 12pm</title>
@@ -2518,6 +2343,10 @@
     <title lang="en">KDKA News 5pm</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eb1b17aa5277e00083f6521">
+    <title lang="en">KDKA News 6pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
+  </programme>
   <programme start="20261103150000 +0000" stop="20261103190000 +0000" channel="pluto-60cb6df2b2ad610008cd5bea">
     <title lang="en">Good Day Sacramento</title>
     <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
@@ -2542,9 +2371,9 @@
     <title lang="en">Latest Sacramento News &amp; Headlines</title>
     <desc lang="en">Top stories in Sacramento, Calif.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-5eceb0d4065c240007688ec6">
-    <title lang="en">Latest Texas News &amp; Headlines</title>
-    <desc lang="en">Top stories in Texas.</desc>
+  <programme start="20261103230000 +0000" stop="20261104000000 +0000" channel="pluto-60cb6df2b2ad610008cd5bea">
+    <title lang="en">Latest Sacramento News &amp; Headlines</title>
+    <desc lang="en">Top stories in Sacramento, Calif.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103173000 +0000" channel="pluto-5eceb0d4065c240007688ec6">
     <title lang="en">CBS News Texas 11am</title>
@@ -2590,9 +2419,9 @@
     <title lang="en">CBS News Texas at 4pm</title>
     <desc lang="en">CBS News Texas is hyper local news streaming 24/7...for free! It's North Texas' place to get top stories, breaking news, weather, traffic and more. Check us out. We're always on</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-65790bd0dfed030008d02f49">
-    <title lang="en">Live: News4 Today @ 11AM</title>
-    <desc lang="en">The latest local news, weather and investigative stories impacting the Washington, DC area.</desc>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-5eceb0d4065c240007688ec6">
+    <title lang="en">CBS News Texas 5pm</title>
+    <desc lang="en">Stay informed with the latest breaking news and headlines.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103180000 +0000" channel="pluto-65790bd0dfed030008d02f49">
     <title lang="en">News4 at Noon at 12PM</title>
@@ -2618,9 +2447,9 @@
     <title lang="en">Live: News4 News @ 5PM</title>
     <desc lang="en">The latest local news, weather and investigative stories impacting the Washington, D.C. area.</desc>
   </programme>
-  <programme start="20261103160000 +0000" stop="20261103170000 +0000" channel="pluto-667f34fffc3a4600087cb96d">
-    <title lang="en">The Marissa Mitchell Show</title>
-    <desc lang="en">Live &amp; breaking news for Washington DC and the entire DMV area. Watch for local stories, weather forecasts, sports updates and more.</desc>
+  <programme start="20261103225800 +0000" stop="20261103233000 +0000" channel="pluto-65790bd0dfed030008d02f49">
+    <title lang="en">Live: News4 News @ 6PM</title>
+    <desc lang="en">The latest local news, weather and investigative stories impacting the Washington, D.C. area.</desc>
   </programme>
   <programme start="20261103170000 +0000" stop="20261103175800 +0000" channel="pluto-667f34fffc3a4600087cb96d">
     <title lang="en">FOX 5 Live Zone</title>
@@ -2644,6 +2473,10 @@
   </programme>
   <programme start="20261103220000 +0000" stop="20261103230000 +0000" channel="pluto-667f34fffc3a4600087cb96d">
     <title lang="en">FOX 5 News at 5</title>
+    <desc lang="en">Live and breaking news for Washington DC and the entire DMV area.</desc>
+  </programme>
+  <programme start="20261103230000 +0000" stop="20261103233000 +0000" channel="pluto-667f34fffc3a4600087cb96d">
+    <title lang="en">FOX 5 News at 6</title>
     <desc lang="en">Live and breaking news for Washington DC and the entire DMV area.</desc>
   </programme>
 </tv>
