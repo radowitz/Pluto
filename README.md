@@ -1,6 +1,6 @@
 # Pluto TV US — auto-updating M3U + XMLTV
 
-Public Pluto TV US live playlist and programme guide for IPTV players. Stream addresses include a session token that expires after about 24 hours. A GitHub Actions workflow regenerates the files and commits them, so the raw URLs stay current without a manual refresh.
+Public Pluto TV US live playlist and programme guide for IPTV players. The lineup is limited to news, sports, animals and nature, local news, and the CNN channel in History + Science. Stream addresses include a session token that expires after about 24 hours. A GitHub Actions workflow regenerates the files and commits them, so the raw URLs stay current without a manual refresh.
 
 ## Playlist (M3U)
 
@@ -20,7 +20,18 @@ Gzipped copy of the same guide:
 https://raw.githubusercontent.com/radowitz/Pluto/main/epg/plutotv_us.xml.gz
 ```
 
-The M3U header sets both `url-tvg` and `x-tvg-url` to the XML URL above, so most players load the guide with the playlist. The guide covers roughly the next 6 hours and is rewritten on every refresh.
+The M3U header sets both `url-tvg` and `x-tvg-url` to the XML URL above, so most players load the guide with the playlist. The guide covers roughly the next 6 hours and is rewritten on every refresh. Programme entries are limited to the same channels as the playlist.
+
+## Channels included
+
+Pluto’s category names are matched without case or punctuation differences (`+`, `&`, and “and” count as the same word). These categories are kept in full:
+
+- News + Opinion
+- Sports
+- Animals + Nature
+- Local News
+
+From **History + Science**, only channels whose names contain `CNN` are kept (today that is **CNN Originals**). Every other category is dropped. To change this later, edit `KEEP_GROUPS` and `PARTIAL_GROUPS` at the top of `scripts/generate_pluto_m3u.py`.
 
 ## Automatic refresh
 
@@ -54,15 +65,13 @@ python3 scripts/generate_pluto_m3u.py --m3u playlists/plutotv_us.m3u --epg epg/p
 
 ## What you need to do
 
-1. Merge the pull request so the workflow and the first playlist are on `main`.
-2. In **Settings → Actions → General**, allow Actions to run, and set **Workflow permissions** to **Read and write**.
-3. Optionally open **Actions** and run **Update Pluto TV playlist** once. The merged commit already contains a freshly generated playlist that remains valid until its token expires (about 24 hours). The schedule keeps replacing it after that.
+Scheduled updates commit back to `main` only when Actions are allowed to run and **Settings → Actions → General → Workflow permissions** is **Read and write**. If the playlist looks stale, open **Actions** and run **Update Pluto TV playlist** once.
 
 ---
 
 # Pluto TV 美国区直播源（自动更新 M3U + XMLTV）
 
-可直接放进 IPTV 播放器的 Pluto TV 美国区直播列表和节目单。播放地址中的会话令牌大约 24 小时后失效。GitHub Actions 会定时重新生成并提交这些文件，因此下面的 raw 地址会自动保持可用，不需要手工更新令牌。
+可直接放进 IPTV 播放器的 Pluto TV 美国区直播列表和节目单，只保留新闻、体育、动物与自然、地方新闻，以及 History + Science 分类里的 CNN 频道。播放地址中的会话令牌大约 24 小时后失效。GitHub Actions 会定时重新生成并提交这些文件，因此下面的 raw 地址会自动保持可用，不需要手工更新令牌。
 
 ## 播放列表（M3U）
 
@@ -82,7 +91,18 @@ https://raw.githubusercontent.com/radowitz/Pluto/main/epg/plutotv_us.xml
 https://raw.githubusercontent.com/radowitz/Pluto/main/epg/plutotv_us.xml.gz
 ```
 
-M3U 文件头里的 `url-tvg` 和 `x-tvg-url` 都指向上面的 XML 地址，多数播放器会随列表一起加载节目单。节目单大约覆盖接下来 6 小时，每次刷新都会重写。
+M3U 文件头里的 `url-tvg` 和 `x-tvg-url` 都指向上面的 XML 地址，多数播放器会随列表一起加载节目单。节目单大约覆盖接下来 6 小时，每次刷新都会重写，并且只包含与播放列表相同的频道。
+
+## 保留的频道
+
+分类名匹配时忽略大小写和标点，`+`、`&` 与 “and” 视为同一个词。下面这些分类整组保留：
+
+- News + Opinion（新闻与评论）
+- Sports（体育）
+- Animals + Nature（动物与自然）
+- Local News（地方新闻）
+
+**History + Science**（历史与科学）里只保留名称中含有 `CNN` 的频道（目前是 **CNN Originals**）。其余分类全部去掉。以后要改范围，编辑 `scripts/generate_pluto_m3u.py` 顶部的 `KEEP_GROUPS` 和 `PARTIAL_GROUPS`。
 
 ## 自动更新
 
@@ -116,6 +136,4 @@ python3 scripts/generate_pluto_m3u.py --m3u playlists/plutotv_us.m3u --epg epg/p
 
 ## 需要你完成的步骤
 
-1. 合并 Pull Request，让工作流和第一份播放列表进入 `main`。
-2. 打开 **Settings → Actions → General**，允许运行 Actions，并把 **Workflow permissions** 设为 **Read and write**。
-3. 可选：在 **Actions** 里手动运行一次 **Update Pluto TV playlist**。合并后的提交里已经有一份刚生成的列表，令牌大约 24 小时内有效；之后由定时任务持续替换。
+定时任务要把更新提交回 `main`，需要允许运行 Actions，并且 **Settings → Actions → General → Workflow permissions** 为 **Read and write**。如果列表看起来过期了，到 **Actions** 里手动运行一次 **Update Pluto TV playlist**。
