@@ -399,11 +399,13 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
-def main(argv: list[str] | None = None) -> int:
-    args = parse_args(sys.argv[1:] if argv is None else argv)
-    if args.hours <= 0:
-        print("--hours must be positive", file=sys.stderr)
-        return 2
+def load_lineup(hours: float, timeout: int, require_region: str, apply_filter: bool = True) -> dict:
+    """Fetch, filter, and dedupe the Pluto lineup without writing files.
+
+    Raises RuntimeError on a response that must not replace a published lineup.
+    """
+    if hours <= 0:
+        raise RuntimeError("--hours must be positive")
 
     device_id = str(uuid.uuid4())
     boot_url = (
@@ -413,54 +415,79 @@ def main(argv: list[str] | None = None) -> int:
         f"&clientID={device_id}&clientModelNumber=1.0.0&serverSideAds=false"
         "&drmCapabilities=widevine%3AL3&blockingMode=&notificationVersion=1&appLaunchCount=0"
     )
-    boot = json.loads(fetch(boot_url, args.timeout))
+    boot = json.loads(fetch(boot_url, timeout))
     jwt = boot.get("sessionToken")
     stitcher = ((boot.get("servers") or {}).get("stitcher") or "").rstrip("/")
     session = boot.get("session") or {}
     if not jwt or not stitcher:
-        print("Boot response did not include a session token and stitcher URL.", file=sys.stderr)
-        return 1
+        raise RuntimeError("Boot response did not include a session token and stitcher URL.")
 
     region = session.get("marketingRegion") or session.get("activeRegion") or session.get("countryCode") or ""
     city = session.get("city") or ""
-    required = (args.require_region or "").strip()
+    required = (require_region or "").strip()
     if required and region.upper() != required.upper():
-        print(
+        raise RuntimeError(
             f"Pluto reported region {region or 'unknown'}"
             + (f" ({city})" if city else "")
-            + f", expected {required}. Refusing to publish this lineup.",
-            file=sys.stderr,
+            + f", expected {required}. Refusing to publish this lineup."
         )
-        return 1
 
     now = datetime.now(timezone.utc)
     start = now.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    stop = (now + timedelta(hours=args.hours)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    channels = json.loads(fetch(f"https://api.pluto.tv/v2/channels?start={start}&stop={stop}", args.timeout))
+    stop = (now + timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    channels = json.loads(fetch(f"https://api.pluto.tv/v2/channels?start={start}&stop={stop}", timeout))
     if not isinstance(channels, list):
-        print("Channel API did not return a list.", file=sys.stderr)
-        return 1
+        raise RuntimeError("Channel API did not return a list.")
 
     selected = usable_channels(channels)
     if not selected:
-        print("No usable Pluto channels were returned.", file=sys.stderr)
-        return 1
-    if not args.no_filter:
-        try:
-            selected = filter_channels(selected)
-        except RuntimeError as exc:
-            print(str(exc), file=sys.stderr)
-            return 1
+        raise RuntimeError("No usable Pluto channels were returned.")
+    if apply_filter:
+        selected = filter_channels(selected)
         if not selected:
-            print("The channel filter removed every channel.", file=sys.stderr)
-            return 1
+            raise RuntimeError("The channel filter removed every channel.")
     selected = dedupe_channels(selected)
     if not selected:
-        print("Name dedupe removed every channel.", file=sys.stderr)
-        return 1
+        raise RuntimeError("Name dedupe removed every channel.")
 
-    expires = jwt_expiry(jwt)
-    playlist = build_m3u(selected, stitcher, jwt, args.epg_url, region, city, now, expires)
+    return {
+        "channels": selected,
+        "stitcher": stitcher,
+        "jwt": jwt,
+        "region": region,
+        "city": city,
+        "now": now,
+        "expires": jwt_expiry(jwt),
+    }
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(sys.argv[1:] if argv is None else argv)
+    try:
+        lineup = load_lineup(
+            args.hours,
+            args.timeout,
+            args.require_region,
+            apply_filter=not args.no_filter,
+        )
+    except RuntimeError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1 if "--hours must be positive" not in str(exc) else 2
+
+    selected = lineup["channels"]
+    expires = lineup["expires"]
+    region = lineup["region"]
+    city = lineup["city"]
+    playlist = build_m3u(
+        selected,
+        lineup["stitcher"],
+        lineup["jwt"],
+        args.epg_url,
+        region,
+        city,
+        lineup["now"],
+        expires,
+    )
     guide, programmes = build_epg(selected)
     ElementTree.fromstring(guide)
 
